@@ -17,7 +17,11 @@
 // write your code here
 
 
+var daysOfWeek = ["M","T","W","TH","F"]
 
+for day in daysOfWeek{
+    print(day)
+}
 
 
 
@@ -27,7 +31,12 @@
  */
 // write your code here
 
+let numDayWeek = ["m","t","w","th","f","s","sun"]
 
+for (index, day) in numDayWeek.enumerate(){
+    
+    print("\(index+1). \(day)")
+}
 
 
 
@@ -38,7 +47,13 @@
  */
 // write your code here
 
+var emptyarray:[String] = []
 
+if emptyarray.isEmpty{
+    print("dis empty")
+}else{
+    print("dis full")
+}
 
 
 
@@ -50,20 +65,21 @@
  */
 // write your code here
 
+var reverseEmptyArray: [String] = []
 
-
-
-
-
-
-
+if !reverseEmptyArray.isEmpty{
+    print("dis not empty")
+}else{
+    
+    print("disis empty")
+}
 
 /*: question5
  ### 5. Find out the size of the 'daysOfTheWeek' array created earlier, and print it to the screen.
  */
 // write your code here
 
-
+print(daysOfWeek.count)
 
 
 
@@ -75,7 +91,14 @@
  */
 // write your code here
 
+daysOfWeek.append("saturday")
+daysOfWeek.append("sunday")
 
+for (index, day) in daysOfWeek.enumerate(){
+    
+    print(day)
+    
+}
 
 
 
@@ -87,9 +110,11 @@
 // write your code here
 
 
+let lastDay = daysOfWeek.last
+daysOfWeek.insert(lastDay!, atIndex: 0)
+daysOfWeek.removeLast()
 
-
-
+print(daysOfWeek)
 
 
 
@@ -98,10 +123,13 @@
  */
 // write your code here
 
-
-
-
-
+var lowerDays:[String] = []
+for day in daysOfWeek{
+    
+    lowerDays.append(day.lowercaseString)
+}
+daysOfWeek = lowerDays
+print(daysOfWeek)
 
 
 
@@ -110,8 +138,13 @@
  */
 // write your code here
 
+if daysOfWeek.count > 5{
+    
+    daysOfWeek.removeFirst()
+    daysOfWeek.removeLast()
+}
 
-
+print(daysOfWeek)
 
 
 
