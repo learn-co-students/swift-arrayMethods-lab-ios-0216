@@ -18,7 +18,11 @@
 
 
 
+var daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
+for day  in daysOfTheWeek {
+    print(day)
+}
 
 
 
@@ -26,8 +30,11 @@
  ### 2. Create an unchanging list for the five days of the week called 'numDaysOfTheWeek' and print each one by using a loop, prefixed by the position of the day of the week.
  */
 // write your code here
+let numDaysOfTheWeek = ["Monday","Tuesday", "Wednesday", "Thursday", "Friday"]
 
-
+for (index, numDay) in numDaysOfTheWeek.enumerated {
+    print("\(index + 1). \(numDay)")
+}
 
 
 
@@ -38,8 +45,13 @@
  */
 // write your code here
 
+var emptyArray: [String]
 
-
+if emptyArray.isEmpty {
+    print("I am empty man!")
+}else {
+    print("I am full !")
+}
 
 
 
@@ -52,8 +64,14 @@
 
 
 
+var reverseEmptyArray : [String]
 
 
+if !reverseEmptyArray.isEmpty {
+    print(" I am not empty ")
+}else {
+    print("I AM EMPTYYYYYY ")
+}
 
 
 
@@ -64,7 +82,7 @@
 // write your code here
 
 
-
+print(daysOfTheWeek.count)
 
 
 
@@ -75,7 +93,9 @@
  */
 // write your code here
 
+daysOfTheWeek.append("Saturday", "Sunday")
 
+print(daysOfTheWeek)
 
 
 
@@ -86,7 +106,8 @@
  */
 // write your code here
 
-
+daysOfTheWeek.removeAtIndex[6]
+daysOfTheWeek.inset("Sunday", atIndex: 0)
 
 
 
@@ -98,7 +119,9 @@
  */
 // write your code here
 
-
+for newDays in daysOfTheWeek {
+    newDays.lowercasedString
+}
 
 
 
@@ -110,7 +133,12 @@
  */
 // write your code here
 
-
+if daysOfTheWeek.count > 5  {
+    print("party on the weekend")
+    daysOfTheWeek.removeAtIndex[0][5]
+}else {
+    print("code code code blog blog blog ")
+}
 
 
 
